@@ -81,17 +81,20 @@ public class OrangeHRMUserManagementPage {
 		}
 	}
 	public void clickOnUsers(){
+		Log.info("clicking on users using actions");
 		DriverUtils.moveMouse(adminModule);
 		DriverUtils.moveMouse(userManagement);
 		users.click();
 	}
 	
 	public void clickOnAddUser(){
+		Log.info("Clicking on Add user button");
 		addUserButton.click();
 	}
 	
 	
 	public void clickOnDeleteUser(){
+		Log.info("Clicking on delete user button");
 		deleteUserButton.click();
 	}
 	

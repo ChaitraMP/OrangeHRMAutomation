@@ -18,7 +18,7 @@ public class Log {
 
 	// Initialize Log4j logs
 
-	private static Logger loggerObj = null; //Logger.getLogger(Log.class.getName() + "_" + ExtentReportFactory.getCurrentDateAndTime());//
+	private static Logger loggerObj = null;//Logger.getLogger(Log.class.getName() + "_" + ExtentReportFactory.getCurrentDateAndTime());//
 	private static ExtentTest test ;
 	private static ExtentReports reports;
 	private static BufferedWriter bw = null;
@@ -33,6 +33,7 @@ public class Log {
 		reports = ExtentReportFactory.getInstance();
 		loggerObj = Logger.getLogger(Log.class.getName() + "_" + ExtentReportFactory.getCurrentDateAndTime());//
 		ssPath = new ArrayList<String>();
+		startReport("suite");
 	}
 
 	public static ExtentTest startReport(String testname){

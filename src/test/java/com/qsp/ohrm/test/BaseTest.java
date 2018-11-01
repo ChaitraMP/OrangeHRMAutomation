@@ -24,14 +24,15 @@ public class BaseTest {
 	
 	@BeforeSuite
 	public void initializeGlobalValues(){
+		
 		config = new ConfigFileReader();
 		Log.configureReport();
-		
+		Log.info("Configured Reports object");
 	}
 	
 	@BeforeMethod
 	public void printMethod(ITestContext cont){
-		System.out.println(cont.getCurrentXmlTest());
+		System.out.println(cont.getName());
 	}
 	@AfterMethod
 	public void tearDown(ITestResult testResult) throws IOException {

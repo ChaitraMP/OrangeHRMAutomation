@@ -40,7 +40,6 @@ public class LoginToHRMTest extends BaseTest {
 		
 		Log.info("clicking on login button");
 		olp.clickOnLoginButton();
-		olp.validateErrorMessage();
 	}
 	
 	

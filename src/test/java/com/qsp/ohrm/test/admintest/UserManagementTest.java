@@ -28,7 +28,7 @@ public class UserManagementTest extends BaseTest {
 	OrangeHRMUserManagementPage usermPage =null;
 	OrangeDashboardPage dashboardPage = null;
 	
-	String userName = "FinalTest112";
+	String userName = "mynewID";
 	@BeforeClass
 	public void setup(){
 		driver = DriverUtils.getWebDriver(config.getBrowserType());

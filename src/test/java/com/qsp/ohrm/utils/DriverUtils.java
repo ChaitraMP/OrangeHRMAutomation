@@ -30,12 +30,12 @@ import com.google.common.base.Function;
 
 public class DriverUtils {
 	static Log log;
-	static ConfigFileReader configFileReader;
+	static ConfigFileReader config;
 	static WebDriver driver;
 	static String nodeUrl = null;
 	public static WebDriver getWebDriver() {
-		configFileReader= new ConfigFileReader();
-		System.setProperty("webdriver.gecko.driver", configFileReader.getDriverPath());
+		config= new ConfigFileReader();
+		System.setProperty("webdriver.gecko.driver", config.getDriverPath());
 		log.info("creating webDriver---");
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
@@ -55,14 +55,14 @@ public class DriverUtils {
 	 * @return
 	 */
 	public static WebDriver getWebDriver(String type) {
-		configFileReader= new ConfigFileReader();
+		config= new ConfigFileReader();
 		Log.info("Creating a Driver with " + type);
 		driver = null;
 		switch(type) {
 		
 		case "FF" :
 			log.info("Creating Firefox driver..");
-			System.setProperty("webdriver.gecko.driver",configFileReader.getDriverPath());
+			System.setProperty("webdriver.gecko.driver",config.getDriverPath());
 			//Creating WebDriver instance
 			driver = new FirefoxDriver();
 			Log.info("Configuring driver with implicit wait of 30 sec ");
@@ -102,8 +102,8 @@ public class DriverUtils {
 	}
 	
 	public static WebDriver getRemoteFFDriver(){
-		//configFileReader= new ConfigFileReader();
-		nodeUrl=configFileReader.getNodeUrl(); // url of node
+		//config= new config();
+		nodeUrl=config.getNodeUrl(); // url of node
 		
 		FirefoxOptions options = new FirefoxOptions();
 		options.addPreference("browserName", "firefox");
@@ -123,8 +123,8 @@ public class DriverUtils {
 	}
 	
 	public static WebDriver getRemoteChromeDriver(){
-		//configFileReader= new ConfigFileReader();
-		nodeUrl=configFileReader.getNodeUrl(); // url of node
+		//config= new config();
+		nodeUrl=config.getNodeUrl(); // url of node
 
 		ChromeOptions options = new ChromeOptions();
 		options.setCapability(CapabilityType.PLATFORM_NAME, Platform.WINDOWS);

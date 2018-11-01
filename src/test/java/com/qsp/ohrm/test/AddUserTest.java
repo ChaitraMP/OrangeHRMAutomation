@@ -21,16 +21,11 @@ public class AddUserTest extends BaseTest
 {
 
 	
-	ConfigFileReader config ;
-	WebDriver driver;
 	OrangeHRMLoginPage olp = null;
 	OrangeHRMAddUserPage aup = null;
 	OrangeDashboardPage odp = null;
 	@BeforeClass
 	public void setup(){
-		config = new ConfigFileReader();
-		Log.configureReport();
-		Log.startReport("setup");
 		driver = DriverUtils.getWebDriver(config.getBrowserType());
 		olp = new OrangeHRMLoginPage(driver);
 		odp = new OrangeDashboardPage(driver);
@@ -41,9 +36,9 @@ public class AddUserTest extends BaseTest
 	
 	@Test
 	public void AddUserTest(){
+		Log.startReport("AddUserTest");
 		OrangeHRMUtils.launchApp(driver, config.getApplicationUrl());
 		olp.loginToOrangeHRM(driver, config.getUserName(), config.getPasswordName());
-		aup.selectUserRoleByText("");
-		
+			
 	}
 }
