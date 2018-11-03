@@ -1,0 +1,10 @@
+---Test case execution started---validateLoginTest-started
+---INFO---Launching the applicaiton ...http://localhost/orangehrm-4.1/symfony/web/index.php/auth/login
+---INFO---Application Launched Successfully..
+---INFO---****Entering User Password @ravindA1
+---INFO---****Clicking on Login Button
+---PASS---Login Success
+---PASS---Login to Applicaiton Success
+---INFO-----Completeds Executing Test - validateLoginTest
+---INFO---inside after method from Class : com.qsp.ohrm.test.OrangeHRMLoginTest
+---Test case execution End---ending the test -ended

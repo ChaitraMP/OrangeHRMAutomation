@@ -1,0 +1,21 @@
+---Test case execution started---validateLoginFailTest-started
+---INFO---Launching the applicaiton ...http://localhost/orangehrm-4.1/symfony/web/index.php/auth/login
+---INFO---Application Launched Successfully..
+---INFO---****Entering User Password dummy
+---INFO---****Clicking on Login Button
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'AHB-LAP', ip: '192.168.1.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 40436, moz:profile: C:\Users\ahb\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 7f192ce0-5275-4684-b223-b40c21c96158
+*** Element info: {Using=xpath, value=//h1}
+---FAIL---Login failed with aravind and dummy
+Refer HTML Screen shot for the latest failed screen
+---INFO---inside after method from Class : com.qsp.ohrm.test.OrangeHRMLoginTest
+---INFO---Screen shot path : D:\QSP\WeekEndSelenium\OrangeHRMAutomation\reports\ss\validateLoginFailTest_Sat_Nov_03_11_34_37_IST_2018.png
+---INFO---Path D:\QSP\WeekEndSelenium\OrangeHRMAutomation\reports\ss\validateLoginFailTest_Sat_Nov_03_11_34_37_IST_2018.png
+---SCREENSHOT---<a href='D:\QSP\WeekEndSelenium\OrangeHRMAutomation\reports\ss\validateLoginFailTest_Sat_Nov_03_11_34_37_IST_2018.png' data-featherlight='image'><img class='report-img' src='file:///D:\QSP\WeekEndSelenium\OrangeHRMAutomation\reports\ss\validateLoginFailTest_Sat_Nov_03_11_34_37_IST_2018.png' /></a>
+---INFO---{Thread[Okio Watchdog,5,main]=[Ljava.lang.StackTraceElement;@388ba540, Thread[Attach Listener,5,system]=[Ljava.lang.StackTraceElement;@47605f2f, Thread[Exec Stream Pumper,5,main]=[Ljava.lang.StackTraceElement;@2ece4966, Thread[Exec Default Executor,5,main]=[Ljava.lang.StackTraceElement;@1dd0e7c4, Thread[main,5,main]=[Ljava.lang.StackTraceElement;@7894f09b, Thread[Exec Stream Pumper,5,main]=[Ljava.lang.StackTraceElement;@3d484181, Thread[Exec Stream Pumper,5,main]=[Ljava.lang.StackTraceElement;@6111ba37, Thread[Exec Stream Pumper,5,main]=[Ljava.lang.StackTraceElement;@7be58f16, Thread[Exec Stream Pumper,5,main]=[Ljava.lang.StackTraceElement;@242aa8d9, Thread[OkHttp ConnectionPool,5,main]=[Ljava.lang.StackTraceElement;@5b11a194, Thread[Exec Default Executor,5,main]=[Ljava.lang.StackTraceElement;@37bd68c3, Thread[Finalizer,8,system]=[Ljava.lang.StackTraceElement;@60f7cc1d, Thread[UrlChecker-2,5,main]=[Ljava.lang.StackTraceElement;@11eadcba, Thread[Reference Handler,10,system]=[Ljava.lang.StackTraceElement;@4721d212, Thread[Exec Stream Pumper,5,main]=[Ljava.lang.StackTraceElement;@1b065145, Thread[Exec Default Executor,5,main]=[Ljava.lang.StackTraceElement;@45cff11c, Thread[Signal Dispatcher,9,system]=[Ljava.lang.StackTraceElement;@207ea13}
+---Test case execution End---ending the test -ended

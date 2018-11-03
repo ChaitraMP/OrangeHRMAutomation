@@ -1,0 +1,17 @@
+---Test case execution started---DeleteUserTest-started
+---INFO---Launching the applicaiton ...http://localhost/orangehrm-4.1/symfony/web/index.php/auth/login
+---INFO---Application Launched Successfully..
+---INFO---****Entering User Password @ravindA1
+---INFO---****Clicking on Login Button
+---PASS---Login Success
+---INFO---clicking on users using actions
+---INFO---Selecting a Checkbox to delete user
+---PASS---Check box selected
+---INFO---Clicking on delete user button
+---INFO---Accepring user popup before deleting
+---INFO---validating toast message.........
+---INFO---Found success message Successfully Deleted
+Close
+---INFO---clicking on welcome link
+---INFO---inside after method from Class : com.qsp.ohrm.test.admintest.UserManagementTest
+---Test case execution End---ending the test -ended
