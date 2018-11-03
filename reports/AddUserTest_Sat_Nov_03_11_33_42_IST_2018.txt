@@ -1,8 +1,0 @@
----Test case execution started---AddUserTest-started
----INFO---Launching the applicaiton ...http://localhost/orangehrm-4.1/symfony/web/index.php/auth/login
----INFO---Application Launched Successfully..
----INFO---****Entering User Password @ravindA1
----INFO---****Clicking on Login Button
----PASS---Login Success
----INFO---inside after method from Class : com.qsp.ohrm.test.AddUserTest
----Test case execution End---ending the test -ended
