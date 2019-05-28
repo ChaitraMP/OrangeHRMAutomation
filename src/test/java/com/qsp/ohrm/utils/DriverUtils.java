@@ -58,7 +58,7 @@ public class DriverUtils {
 		config= new ConfigFileReader();
 		Log.info("Creating a Driver with " + type);
 		driver = null;
-		switch(type) {
+		switch(type.toUpperCase()) {
 		
 		case "FF" :
 			log.info("Creating Firefox driver..");

@@ -1,1 +1,10 @@
-/target/
+.settings
+bin
+drivers
+libs
+.classpath
+.project
+dbdriver
+target/
+reports/
+test-output/

@@ -5,11 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.qsp.ohrm.utils.Log;
-import com.relevantcodes.extentreports.ExtentTest;
 
-import junit.framework.Assert;
 
 public class OrangeHRMLoginPage {
 
