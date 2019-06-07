@@ -27,6 +27,35 @@ public class OrangeDashboardPage {
 	@FindBy(xpath="//h1[text()='Dashboard']")
 	WebElement elementDashboard;
 	
+	@FindBy(id="menu_leave_viewLeaveModule")
+	WebElement elementLeave;
+	
+	@FindBy(id="menu_leave_Entitlements")
+	WebElement elementEntitlements;
+	
+	@FindBy(id="menu_leave_addLeaveEntitlement")
+	WebElement elementAddEntitlement;
+	
+	public void clickOnLeave()
+	{
+		Log.info("clicking on welcome link");
+		DriverUtils.getVisibleElement(driver, welcomeLink);
+		elementLeave.click();
+	}
+	
+	public void clickOnEntitlements()
+	{
+		Log.info("clicking on welcome link");
+		DriverUtils.getVisibleElement(driver, welcomeLink);
+		elementEntitlements.click();
+	}
+	
+	public void clickOnAddEntitlements()
+	{
+		Log.info("clicking on welcome link");
+		DriverUtils.getVisibleElement(driver, welcomeLink);
+		elementAddEntitlement.click();
+	}
 	
 	public void clickOnWelcomeLink(){
 		Log.info("clicking on welcome link");
