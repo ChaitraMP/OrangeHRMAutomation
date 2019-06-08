@@ -180,5 +180,4 @@ public class OrangeHRMAddUserPage {
 		DriverUtils.getClickableElement(driver, searchbtn);
 		searchbtn.click();
 	}
-
 }
