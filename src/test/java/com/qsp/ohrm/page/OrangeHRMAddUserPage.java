@@ -140,6 +140,7 @@ public class OrangeHRMAddUserPage {
 	public void clickOnSaveUserButton()
 	{
 		Log.info("Saving the user record " );
+		DriverUtils.getClickableElement(driver, addUserSaveButton);
 		addUserSaveButton.click();
 	}
 	
@@ -179,5 +180,13 @@ public class OrangeHRMAddUserPage {
 		Log.info("Click on Search Button");
 		DriverUtils.getClickableElement(driver, searchbtn);
 		searchbtn.click();
+	}
+	public void verifyNameisPresent(String name)
+	{
+		System.out.println("//a[.='"+name+"']");
+		//Log.info("Verify user in the list of users");
+		//WebElement nameele = driver.findElement(By.xpath("//a[.="+name+"]"));
+		//DriverUtils.getVisibleElement(driver, nameele);
+		//Log.info("User is successfully added and visible in the list");
 	}
 }
