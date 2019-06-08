@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Admin_JobTitlePage {
+public class AdminJobTitlePage {
 	WebDriver driver;
 	
 	@FindBy(xpath="//a[text()='Admin']")
@@ -27,7 +27,7 @@ public class Admin_JobTitlePage {
    @FindBy(id="btnSave")
    private WebElement saveBtn;
    
-   public  Admin_JobTitlePage(WebDriver driver)
+   public  AdminJobTitlePage(WebDriver driver)
    {
 	   PageFactory.initElements(driver, this);
    }
