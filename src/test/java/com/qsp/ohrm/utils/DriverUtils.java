@@ -219,7 +219,7 @@ public class DriverUtils {
 	//	System.out.println("Getting element By " + type  + "-" + value);
 		WebDriverWait wait = null;
 		try{
-			wait = new WebDriverWait(driver, 65);
+			wait = new WebDriverWait(driver, 80);
 			wait.until(ExpectedConditions.visibilityOf(ele));
 		}catch(Exception ex){
 			Log.info("----getVisiblieElement---" + ex.getMessage());
