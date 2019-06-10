@@ -102,7 +102,7 @@ public class DriverUtils {
 	}
 	
 	public static WebDriver getRemoteFFDriver(){
-		//config= new config();
+		config= new ConfigFileReader();
 		nodeUrl=config.getNodeUrl(); // url of node
 		
 		FirefoxOptions options = new FirefoxOptions();
@@ -123,7 +123,7 @@ public class DriverUtils {
 	}
 	
 	public static WebDriver getRemoteChromeDriver(){
-		//config= new config();
+		config= new ConfigFileReader();
 		nodeUrl=config.getNodeUrl(); // url of node
 
 		ChromeOptions options = new ChromeOptions();

@@ -20,7 +20,8 @@ public class AddLeaveEntitlementTest extends BaseTest {
  	public void preConfig(){
  		Log.startReport("setup");
  		
-		driver = DriverUtils.getWebDriver();
+		//driver = DriverUtils.getWebDriver();
+ 		driver = DriverUtils.getRemoteChromeDriver();
 		oLoginpage = new OrangeHRMLoginPage(driver);
 		odp = new OrangeDashboardPage(driver);
 		oAddLeavEnt = new OrangeHRMAddLeaveEntitlement(driver);
